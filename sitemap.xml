@@ -1,34 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Home Page -->
     <url>
         <loc>https://lubosoft.com/#home</loc>
         <lastmod>2024-02-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>1.0</priority>
     </url>
+
+    <!-- About Page -->
     <url>
         <loc>https://lubosoft.com/#about</loc>
         <lastmod>2024-02-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Skills Page -->
     <url>
         <loc>https://lubosoft.com/#skills</loc>
         <lastmod>2024-02-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Methodology Page -->
     <url>
         <loc>https://lubosoft.com/#methodallagy</loc>
         <lastmod>2024-02-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Projects Page -->
     <url>
         <loc>https://lubosoft.com/#projects</loc>
         <lastmod>2024-02-20</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Additional URLs -->
     <!-- Add more URLs as needed -->
+
 </urlset>
