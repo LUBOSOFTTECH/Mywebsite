@@ -995,7 +995,7 @@ noscript {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('src/bg/b1\ \(3\).png'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-image: url('src/bg/b4.png'); /* Replace 'your-image-url.jpg' with the path to your image */
     background-size: cover; /* Adjust as needed */
 }
 
@@ -1141,8 +1141,7 @@ noscript {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('src/bg/b1\ \(3\).png'); /* Replace 'your-image-url.jpg' with the path to your image */
-  background-size: cover; /* Adjust as needed */
+
 }
 .methodallagy-section {
     width: 60%;
