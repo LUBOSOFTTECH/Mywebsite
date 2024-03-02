@@ -565,6 +565,7 @@ noscript {
     /* background image */
     background-image: url('src/png/b3.png'); /* Replace 'your-image-url.jpg' with the path to your image */
   background-size: cover; /* Adjust as needed */
+  
 }
 
 .text-content {
@@ -994,7 +995,8 @@ noscript {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    background-image: url('src/bg/b1\ \(3\).png'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover; /* Adjust as needed */
 }
 
 .about-section {
@@ -1130,6 +1132,7 @@ noscript {
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 .methodallagy-section-container {
     margin-top: 80px;
@@ -1138,6 +1141,8 @@ noscript {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('src/bg/b1\ \(3\).png'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover; /* Adjust as needed */
 }
 .methodallagy-section {
     width: 60%;
@@ -1289,6 +1294,7 @@ noscript {
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 
 .projects-section-div {
