@@ -51,6 +51,7 @@ html {
     --tech-stack-box-first-color: #1a1a29;
     --tech-stack-box-second-color: rgba(27, 27, 40, 0);
     --tech-stack-box-border-color: #292929;
+    --optionDefaultColours: #ED5565, #FC6E51, #FFCE54, #2ECC71, #5D9CEC, #AC92EC;
 }
 
 ::-webkit-scrollbar {
@@ -404,8 +405,9 @@ noscript {
 }
 
 .logo-top {
+    margin-bottom: 100%;
     width: 100%;
-    height: 84%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,7 +562,9 @@ noscript {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    /* background image */
+    background-image: url('src/png/b3.png'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover; /* Adjust as needed */
 }
 
 .text-content {
@@ -983,13 +987,14 @@ noscript {
 
 /* about section starts from here */
 .about-section-container {
-    margin-top: -60px;
+    margin-top: -10px;
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .about-section {
@@ -1256,8 +1261,8 @@ noscript {
 }
 
 .tech-stack-box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2452,3 +2457,4 @@ noscript {
     width: 100%;
     content: '';
   }
+  
