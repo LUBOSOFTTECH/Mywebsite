@@ -58,35 +58,37 @@
   <title>LUBO SOFT Software Solutions Company</title>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="src/png/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/png/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="src/png/favicon-16x16.png">
-  <link rel="manifest" href="src/png/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="src/png/ms-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/ico/favicon-16x16.png">
+  <link rel="manifest" href="src/ico/site.webmanifest">
+  <link rel="mask-icon" href="src/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Schema.org Markup -->
+
+  {% if request.path|length < 1 %}
   <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "LUBO SOFT",
-    "url": "https://www.lubosoft.com",
-    "logo": "https://www.lubosoft.com/src/png/favicon-32x32.png",
-    "description": "LUBO SOFT is a leading software development company...",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-979-056-2268",
-      "contactType": "customer service"
-    },
-    "sameAs": [
-      "https://www.facebook.com/lubosoft",
-      "https://twitter.com/lubosoft",
-      "https://www.linkedin.com/company/lubosoft"
-    ]
-  }
-</script>
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "LUBO SOFT",
+      "alternateName" : "LUBO SOFT",
+      "url" : "https://www.lubosoft.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://lubosoft.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script> 
+ {% endif %}
+
+
 </head>
 
 <body class="body">
