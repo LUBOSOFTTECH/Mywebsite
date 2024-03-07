@@ -167,7 +167,13 @@ function Contact() {
   document.getElementById("contactPopupWrapper").style.display = "block";
 }
 function EmailContact() {
-window.location.href = "mailto:lubosoftenquiry@gmail.com";
+  var phoneNumber = '7200462268';
+    
+  // Form the WhatsApp URL
+  var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + phoneNumber;
+  
+  // Open the WhatsApp chat window
+  window.open(whatsappUrl, '_blank');
 }
 function sendMessage() {
   // Get values from input fields
