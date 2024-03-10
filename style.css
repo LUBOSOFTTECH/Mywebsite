@@ -1044,9 +1044,15 @@ noscript {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-@keyframes countup {
-    to {
-       transform: rotateX(90deg) rotateY(90deg);
+@keyframes shake {
+    0% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+    100% {
+      transform: translateY(-2px);
     }
   }
 .sectionHeadingP {
@@ -1280,8 +1286,7 @@ noscript {
     border-radius: 25px;
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     border: 2px solid var(--tech-stack-box-border-color);
-    /* box-shadow: 0px 10px 20px var(--color-shadowDark); */
-    animation: countup var(--duration, 10s) linear infinite;
+    animation: shake 0.5s ease-in-out infinite; 
 }
 
 .tech-stack-box img {
