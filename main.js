@@ -55,6 +55,43 @@ document.getElementById("burger-bar2").classList.remove("hamburger-animation2");
 document.getElementById("burger-bar3").classList.remove("hamburger-animation3");
 
 }
+const targetSection = document.getElementById('projects');
+let methodTriggered = false;
+
+// Event listener for the scroll event
+window.addEventListener('scroll', () => {
+    // Get the position of the section relative to the viewport
+    const rect = targetSection.getBoundingClientRect();
+
+    // Check if the section is at least 50% visible in the viewport
+    if (rect.top < window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2 && !methodTriggered) {
+        // Call your method or perform any actions here
+        yourMethod();
+
+        // Set the flag to prevent multiple calls
+        methodTriggered = true;
+    }
+});
+function yourMethod() {
+  const counter = document.querySelector(".count");
+  const target = parseInt(counter.getAttribute("data-target"));
+  const increment = target / 100; // You can adjust the speed of the animation by changing this value
+
+  let currentCount = 0;
+
+  const updateCount = () => {
+      currentCount += increment;
+      counter.textContent = Math.round(currentCount);
+
+      if (currentCount < target) {
+          requestAnimationFrame(updateCount);
+      } else {
+          counter.textContent = target;
+      }
+  };
+
+  updateCount();
+}
 
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.navbar .navbar-tabs .navbar-tabs-ul a li');
