@@ -1276,7 +1276,31 @@ noscript {
     margin-top: 50px;
     
 }
-
+.addicons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    
+}
+.icons_box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 2px solid var(--tech-stack-box-border-color);
+}
+.icon_image
+{
+    height: 80%;
+    width: 80%;
+}
 .tech-stack-box {
     width: 300px;
     height: 300px;
