@@ -564,9 +564,7 @@ noscript {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* background image */
-    background-image: url('src/images/landing\ bg.webp'); /* Replace 'your-image-url.jpg' with the path to your image */
-  background-size: cover; /* Adjust as needed */
+
   
 }
 
@@ -997,8 +995,7 @@ noscript {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('src/images/about\ bg.webp'); /* Replace 'your-image-url.jpg' with the path to your image */
-    background-size: cover; /* Adjust as needed */
+
 }
 
 .about-section {
