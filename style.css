@@ -2481,15 +2481,12 @@ noscript {
     max-width: 100%;
   }
   .img-gradient  img{
-    margin-left: 1.5px;
-    margin-top: 1.5px;
-    width: 345px;
-    width: 345px;
-    border-radius: 500px; /* Make it round */
+   width: 300px;
+     border-radius: 500px; /* Make it round */
 
   }
   .img-gradient {
-    width: 350px;
+    width: 300px;
     margin: auto;
     margin: auto;
     border-radius: 500px; /* Make it round */
