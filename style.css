@@ -2480,11 +2480,22 @@ noscript {
     /*  To contain the image to the confines of the div  */
     max-width: 100%;
   }
-  
+  .img-gradient  img{
+    margin-left: 1.5px;
+    margin-top: 1.5px;
+    width: 345px;
+    width: 345px;
+    border-radius: 500px; /* Make it round */
+
+  }
   .img-gradient {
     width: 350px;
     margin: auto;
- 
+    margin: auto;
+    border-radius: 500px; /* Make it round */
+    box-shadow: 0 0 20px 10px rgba(112, 112, 229, 0.5); /* Apply glow effect */
+    background-color: lightblue; /* Set light blue background color */
+    
   }
   .counter {
     font-size: 3em;
