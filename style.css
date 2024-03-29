@@ -564,8 +564,7 @@ noscript {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-  
+    background-image: linear-gradient(192deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(112.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(67.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(237deg, rgb(24, 15, 143),rgb(40,1,133)); background-blend-mode:overlay,overlay,overlay,normal;
 }
 
 .text-content {
@@ -826,7 +825,7 @@ noscript {
     height: 40px;
     border-radius: 0px;
     cursor: pointer;
-
+z-index: 997;
 }
 
 .letsTalkBtn-text {
@@ -1859,7 +1858,7 @@ noscript {
         border: none;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: space-between;
     }
 
@@ -2132,6 +2131,7 @@ noscript {
     #hamburger {
         margin-right: 20px;
         height: 150px;
+        
     }
 
     .hamburgerbase {
@@ -2439,9 +2439,22 @@ noscript {
         }
     }
 
-    .input-group {
-            margin-bottom: 10%; 
+    @media screen and (max-width: 468px)
+    {
+        .logo-top  {
+            margin-top: 30%;
         }
+    #hamburger-button 
+        
+        {
+            margin-top: 8%;
+        }
+        .frontend-dev-heading
+        {
+            height: 150px;
+        }
+    }
+
 
 
 /* responsive code above */
@@ -2490,12 +2503,11 @@ noscript {
     margin: auto;
     margin: auto;
     border-radius: 500px; /* Make it round */
-    box-shadow: 0 0 20px 10px rgba(112, 112, 229, 0.5); /* Apply glow effect */
+    box-shadow: 0 0 20px 10px rgba(125, 4, 230, 0.5); /* Apply glow effect */
     background-color: lightblue; /* Set light blue background color */
-    
   }
   .counter {
-    font-size: 3em;
+    font-size: 7em;
     font-weight: bold;
     background-image: -webkit-linear-gradient(linear, left top, right top, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
     background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
@@ -2521,3 +2533,23 @@ noscript {
     display: inline-block;
     animation: count-up 1s ease-in-out;
 }
+
+
+  .scrollable-container{
+    display: flex; /* Use flexbox */
+    flex-wrap: nowrap; /* Prevent wrapping of flex items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  .project-boxes-div {
+    flex: 0 0 auto; /* Allow flex items to shrink and grow */
+    margin-right: 20px; /* Add spacing between boxes */
+  }
+  /* Adjust the width of the scrollbar */
+.scrollable-container::-webkit-scrollbar {
+    height: 6px;
+    border-radius: 50%;
+  }
+  
